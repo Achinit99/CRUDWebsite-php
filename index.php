@@ -1,3 +1,4 @@
+<?php include('./dbcon.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +14,22 @@
         <th>City</th>
         <th>Age</th>
       </tr>
-    
+    <?php
+        $query = "SELECT * FROM student";
+        $res = mysqli_query($con, $query);
+
+        if(mysqli_num_rows($res)>0){
+          while($row = mysqli_fetch_assoc($res)){
+            echo "<tr>";
+            echo "<td>".$row['id']."</td>";
+            echo "<td>".$row['name']."</td>";
+            echo "<td>".$row['city']."</td>";
+            echo "<td>".$row['age']."</td>";
+            echo "</tr>";
+          }
+        }
+
+     ?>
       <tr>
         <td>03</td>
         <td>Avishka</td>
