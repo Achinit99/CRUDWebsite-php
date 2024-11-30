@@ -5,6 +5,7 @@
   </head>
   <body>
     <h1>Student Details</h1>
+    <a href="./addStudent.php">Add Student</a>
     <table>
       <tr>
         <th>Id</th>
@@ -22,6 +23,12 @@
         <td>02</td>
         <td>Achini</td>
         <td>Wariyapola</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>Avishka</td>
+        <td>Narammala</td>
         <td>26</td>
       </tr>
     </table>
