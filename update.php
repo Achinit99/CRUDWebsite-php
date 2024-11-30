@@ -15,6 +15,8 @@
     ?>
 
     <form method="post" action="./process.php">
+      <input type="number" name="id" value="<?php echo $id;?>" hidden>
+
       <label for="name">Name: </label>
       <input type="text" name="name" id="name" value="<?php echo $row['name']; ?>"><br><br>
 

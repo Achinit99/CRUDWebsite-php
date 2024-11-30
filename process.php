@@ -16,7 +16,21 @@
     }else{
       echo "Failed to insert";
     }
+  }
 
-  } else{
-    echo "Failed to get data";
+  if(isset($_POST['update'])){
+    $id=$_POST['id'];
+    $name=$_POST['name'];
+    $city=$_POST['city'];
+    $age=$_POST['age'];
+
+    $query = "UPDATE TABLE student SET name='$name',city='$city',age='$age' WHERE id='$id'";
+    $res = mysqli_query($con, $query);
+
+    if($res){
+      echo "Successfully updated";
+    }else{
+      echo "Failed to update";
+    }
+
   }
