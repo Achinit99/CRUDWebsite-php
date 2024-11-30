@@ -6,7 +6,7 @@
   <body>
     <h2>Add Student</h2>
 
-    <form>
+    <form method="post" action="./process.php">
       <label for="name">Name: </label>
       <input type="text" name="name" id="name"><br><br>
 
