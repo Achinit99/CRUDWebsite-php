@@ -13,6 +13,7 @@
         <th>Name</th>
         <th>City</th>
         <th>Age</th>
+        <th>Action</th>
       </tr>
     <?php
         $query = "SELECT * FROM student";
@@ -25,10 +26,15 @@
             echo "<td>".$row['name']."</td>";
             echo "<td>".$row['city']."</td>";
             echo "<td>".$row['age']."</td>";
+            echo "<td>";
+            ?>
+            <a href="./update.php?id=<?php echo $row['id']; ?>">Update</a>
+            <a href="./delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+            <?php
+            echo "</td>";
             echo "</tr>";
           }
         }
-
      ?>
       <tr>
         <td>03</td>
