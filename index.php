@@ -13,18 +13,7 @@
         <th>City</th>
         <th>Age</th>
       </tr>
-      <tr>
-        <td>01</td>
-        <td>Krishan</td>
-        <td>Kandy</td>
-        <td>26</td>
-      </tr>
-      <tr>
-        <td>02</td>
-        <td>Achini</td>
-        <td>Wariyapola</td>
-        <td>26</td>
-      </tr>
+    
       <tr>
         <td>03</td>
         <td>Avishka</td>
