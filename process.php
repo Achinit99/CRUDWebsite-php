@@ -19,18 +19,18 @@
   }
 
   if(isset($_POST['update'])){
-    $id=$_POST['id'];
+    $id=mysqli_real_escape_string($con,$_POST['id']);
     $name=$_POST['name'];
-    $city=$_POST['city'];
+    $city = $_POST['city'];
     $age=$_POST['age'];
 
-    $query = "UPDATE TABLE student SET name='$name',city='$city',age='$age' WHERE id='$id'";
+    $query = "UPDATE student SET name='$name',city='$city',age='$age' WHERE id='$id'";
     $res = mysqli_query($con, $query);
 
     if($res){
-      echo "Successfully updated";
+        //echo "Successfully updated";
+        header("location:index.php");
     }else{
-      echo "Failed to update";
+        echo "Failed to update";
     }
-
-  }
+}
